@@ -1,0 +1,120 @@
+@use 'mixinsfunc';
+
+.about{
+    @include mixinsfunc.crear-hero;
+
+    &-container{
+        width: 90%;
+        display: block;
+        margin: auto;
+        padding-top:100px;
+
+
+    }
+
+    &-article{
+        float: left;
+        width: 55%;
+        padding-right: 25px;
+
+    }
+
+    &-image{
+        float: right;
+        width: 45%;
+        
+
+    }
+
+    &-imagejpg{
+        width: 100%;
+        height: auto;
+
+    }
+
+    &-h1{
+        text-transform: uppercase;
+        font-size: 45px;
+        font-weight: 300;
+
+    }
+
+    &-h3{
+        margin-top: 30px;
+        color:#fff ;
+        font-size: 22px;
+        font-weight:500 ;
+    }
+
+    &-p{
+        margin-top: 10px;
+        font-size: 19px;
+        line-height: 1.5;
+        color:#ffff ;
+    }
+
+    &-button{
+        margin-top: 45px;
+
+
+    }
+
+    &-a{
+        background-color: #f19a0e;
+        padding: 10px 18px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 24px;
+        letter-spacing:1.5px;
+        font-weight:400 ;
+        
+
+    }
+
+    &-a:hover{
+        background-color: #000;
+        transition: 0.5s ease;
+        
+
+    }
+
+    
+}
+
+@media screen and (max-width:768px){
+    .about-container{
+        width:80% ;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    .about-article{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .about-image{
+        float: none;
+        width: 100%;
+        margin-top: 50%; 
+    }
+
+    .about-h1{
+        font-size: 30px;
+
+
+    }
+
+    .about-button{
+        text-align: center;
+
+    }
+
+    .about-a{
+        padding:9px 16px;
+    }
+}

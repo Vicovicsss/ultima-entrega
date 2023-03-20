@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+body{
+    background-color: #fff59d;
+}
+
+.header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85%;
+    padding: 5px 10%;
+    padding: 40px;
+
+
+}
+
+.hambu{
+    max-width: 100%;
+}
+
+.toogle-menu{
+    width: 40px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    filter: invert(1);
+    width: 40px;
+
+}
+
+.logo{  
+    cursor: pointer;
+        
+
+}
+
+.img{   
+    height: 70px;
+    width: auto;
+    border-radius: 30%;
+    transition: all 0.3s;
+
+}
+
+.img:hover{
+    transform: scale(1.2);
+
+}
+
+.links{
+    list-style: none;
+
+}
+
+.links a{
+    display: inline-block;
+    padding: 0 20px;
+    font-weight: 700;
+    font-size: 23px;
+    color: #eceff1;
+    text-decoration: none;
+    
+
+
+}
+
+.links a:hover{
+    transform: scale(1.1);
+    color: #ffbc0e;
+
+}
+
+.header .btn button{
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+
+}
+
+.header .btn button:hover{
+    background-color: #e2f1f8;
+    color: #ffbc0e;
+    transform: scale(1.1);
+
+}
+
+@media screen and (min-width: 300px) and (max-width:800px){
+    .footer-content-container{
+        position: static;
+        bottom: 0;
+        
+    }
+
+    .content{
+        text-align: center;
+
+    }
+    
+    .logo{
+        display: none;
+    }
+
+    .footer{
+        position: static;
+    }
+
+    .menu-tittle{
+        text-align: center;
+        
+    }
+
+    .content{
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%) translateY(-50%);
+        position: absolute;
+
+    }
+    
+   
+
+}
